@@ -5,15 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
     <title>Library</title>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Book Tracker</h1>
-            <button>+</button>
+            <h1>Virtual Library</h1>
+            <button class="add">+
+            </button>            
         </header>
-        <div class="main"></div>
+        <div class="main">
+        </div>
+        <div class="modal">
+            <form action="" style="display: none;">
+                <label for="title">Title: </label>
+                <input type="text" name="bookInfo" id="title">
+
+                <label for="author">Author: </label>
+                <input type="text" name="bookInfo" id="author">
+
+                <label for="pages">Pages: </label>
+                <input type="number" name="bookInfo" id="pages">
+
+                <label for="bookRead">Book Read: </label>
+                <select name="bookInfo" id="options">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+                
+                <label for="addBook">Add Book </label>
+                <input type="submit" name="bookInfo" id="addBook">
+
+            </form>
+        </div>
     </div>
     
 </body>
