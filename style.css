@@ -9,14 +9,26 @@ html, body {
     grid-template-rows: 0.5fr 5fr;
     height: 100%;
 }
+
 h1 {
     position: fixed;
     left: 40px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
 }
+
 header {
     grid-row: 1/2;
-    background-color: blue;
-    color: #fff;
+    background: #0D354E;
+    background: -moz-linear-gradient(-45deg, #0D354E 0%, #2798E2 50%, #144E75 100%);
+    background: -webkit-linear-gradient(-45deg, #0D354E 0%, #2798E2 50%, #144E75 100%);
+    background: linear-gradient(135deg, #0D354E 0%, #2798E2 50%, #144E75 100%);
 }
 
 .main {
@@ -29,7 +41,6 @@ header {
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 }
-
 
 .modal {
     position: fixed;
@@ -121,7 +132,7 @@ header {
   }
   
   .book .toggle {
-    background-color: #4CAF50;
+    background-color: #2697DF;
     border: none;
     color: white;
     padding: 8px 16px;
@@ -130,10 +141,6 @@ header {
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
-  }
-  
-  .book .toggle:hover {
-    background-color: #3e8e41;
   }
   
   .book .delete {
@@ -147,13 +154,9 @@ header {
     font-size: 16px;
     cursor: pointer;
   }
-  
-  .book .delete:hover {
-    background-color: #da190b;
-  }
-  
+   
   .book.yes {
-    background-color: #c6efce;
+    background-color: #2697DF;
   }
   
   .book.no {

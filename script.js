@@ -20,7 +20,7 @@ function addBookToLibrary(title, author, pageNum, readingStatus) {
     let newBook = new Book(title, author, pageNum, readingStatus);
     myLibrary.push(newBook);
   
-    // create a new grid item element
+    // create a new grid items
     const gridItem = document.createElement('div');
     gridItem.classList.add('book');
     gridItem.classList.add(`book-${myLibrary.length}`);
